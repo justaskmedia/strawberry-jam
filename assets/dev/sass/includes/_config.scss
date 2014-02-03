@@ -1,0 +1,20 @@
+//Define Brand Colors
+$black: #000;
+$white: #fff;
+$red: #FF5740;
+$blue: #29A3FF;
+$body-color: #333;
+
+// Define Brand Fonts
+$body-font: 'Arial', sans-serif;;
+$header-font: "Georgia",serif;
+
+//Define  Mixins required
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
+@mixin media($breakpoint) {
+  @media only screen and (max-width: $breakpoint + px) { @content; }
+}

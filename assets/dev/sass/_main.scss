@@ -1,0 +1,33 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $body-font;
+  font-size: 62.5%;
+  padding: 10px;
+}
+
+h1 {
+  font-family:$header-font;
+  @include font-size(2.5);
+}
+
+p, li {
+  @include font-size; // Sets the rem equvilant to 16px
+  color: $body-color;
+}
+
+a {
+  color: $blue;
+  transition: all 0.2s ease-in-out;
+  text-decoration: underline;
+
+  &:hover {
+    color:lighten($blue, 20%);
+  }
+}
+
+img {
+  max-width: 100%;
+}

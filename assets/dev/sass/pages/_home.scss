@@ -1,0 +1,15 @@
+@import '../modules/hero';
+
+#wrapper {
+  width: 90%;
+  max-width: 450px;
+  margin: 0 auto;
+  display: block;
+}
+
+h1 {
+  padding-bottom: 7px;
+  margin-bottom: 15px;
+  border-bottom: 1px dotted $red;
+  color: $red;
+}
